@@ -1,0 +1,329 @@
+what are the datatypes?
+undefined
+null
+Boolean
+String
+Symbol
+number
+Object
+BigInt
+
+
+Boolean:
+It represents a logical entity and two values are true or false.
+
+>,>=,<,<=,==
+true represents 1, false represents 0
+Boolean are generally used for conditional testing
+
+ex:
+var a=3;
+var b=4;
+var c=3;
+(a<=b)//false
+
+number:
+It represent the number and is written with or without decimal
+
+ex:
+var a=1,
+var a=1.2
+
+Object:used to store collection of data.
+
+ex:
+var person
+{
+firstName:"rashmi";
+lastName:"xyz";
+id:1
+}
+
+undefined:
+Its declared but not initialized
+
+var a;
+
+string :series of charcters 
+var name="jyothi"
+
+null 
+var a=123;
+var a=null;
+typeof(a);
+
+String operations:
+
+var name="ReNuKa";//denoted by double quote  
+name.length;
+
+var a='r'// denoted by single quote
+
+name.toLowerCase();
+name[0];
+name[name.length-1];
+
+var a="John";
+var b="john";
+a==b
+
+trim()
+
+It is using for before and after extra spaces removing but you can't able to remove spaces in between.
+
+var name="        jyothi     xyz    ";
+name.trim();
+
+o/p:'jyothi      ..'
+
+var city="mysore";
+city.slice(1);
+
+var city="mysore";
+city.slice(1);
+'ysore'
+var city="mysore";
+city.slice(2);
+'sore'
+var city="mysore";
+city.slice(2,7);
+'sore'
+var city="mysore";
+city.slice(2,6);
+'sore'
+var city="mysore";
+city.slice(2,5);
+'sor'
+var city="mysore";
+city.slice(2,4);
+'so'
+
+var a="Javascript"
+a.replace('a','A');
+
+
+Examples
+var a="Javascript"
+a.replace('a','A');
+'JAvascript'
+a.replace(/a/g,'A');
+'JAvAscript'
+var b="java"
+undefined
+b.replace(/a/g,'+');
+'j+v+'
+var name="        jyothi     xyz    ";
+undefined
+name.trim();
+'jyothi     xyz'
+name.replace(/ /,'*');
+'*       jyothi     xyz    '
+name.replace(/ /g,'*');
+'********jyothi*****xyz****'
+name.replace(/ /g,'-');
+'--------jyothi-----xyz----'
+var movieName="kantara"
+var rating="4.5"
+var type="Devotion";
+var ind="sandalwood";
+undefined
+var out="An" +movieName+"is an"+type+"movie with rating of"+rating+"and from ind"+ind"."
+VM1132:1 Uncaught SyntaxError: Unexpected string
+var out="An" +movieName+"is an"+type+"movie with rating of"+rating+"and from ind"+ind"
+VM1140:1 Uncaught SyntaxError: Invalid or unexpected token
+var out="An" +movieName+"is an"+type+"movie with rating of"+rating+"and from ind"+ind
+
+
+out
+'Ankantarais anDevotionmovie with rating of4.5and from indsandalwood'
+var out="An"+"&nbsp" +movieName+"is an"+type+"movie with rating of"+rating+"and from ind"+ind
+out
+'An&nbspkantarais anDevotionmovie with rating of4.5and from indsandalwood'
+var out="An " +movieName+"is an "+type+"movie with rating of"+rating+"and from ind"+ind
+out
+'An kantarais an Devotionmovie with rating of4.5and from indsandalwood'
+var out="An " +movieName+" is an "+type+"movie with rating of"+rating+"and from ind"+ind
+out
+'An kantara is an Devotionmovie with rating of4.5and from indsandalwood'
+var out="An"+"&nbsp" +movieName+"is an"+type+"movie with rating of"+rating+"and from ind"+ind
+out
+'An&nbspkantarais anDevotionmovie with rating of4.5and from indsandalwood'
+var out="An"+" " +movieName+" "+"is an"+type+"movie with rating of"+" "+rating+"and from ind"+ind
+out
+'An kantara is anDevotionmovie with rating of 4.5and from indsandalwood'
+var out="An"+" " +movieName+" "+"is an" +type+ " movie with rating of"+" "+rating+"and from ind"+ind
+var out="An"+" " +movieName+" "+"is an " +type+ " movie with rating of"+" "+rating+"and from ind"+ind
+out
+'An kantara is an Devotion movie with rating of 4.5and from indsandalwood'
+
+
+EXAMPLE:
+var name="chandana"
+undefined
+var name1="jyothi"
+undefined
+name+" "+name1
+'chandana jyothi'
+var a=10;
+undefined
+var b=20;
+undefined
+a+b;
+30
+a-b;
+-10
+var a=10;var b="Rashmi";
+undefined
+a-b;
+NaN
+not a number
+VM1825:1 Uncaught SyntaxError: Unexpected identifier 'a'
+var c=10;
+undefined
+var d=10;
+undefined
+c*d;
+100
+var a=10;
+undefined
+var b=20;
+undefined
+b*a;
+200
+a%b;
+10
+a/b
+0.5
+b%a;
+0
+
+ex:
+var a="10"
+undefined
+var b="20"
+undefined
+a+b
+'1020'
+var c="renuka"
+undefined
+a+c
+'10renuka'
+c+a
+'renuka10'
+a-b;
+-10
+
+var a="10"
+var b=30;
+a+b
+'1030'
+a-b;
+-20
+
+
+"10"+20+30;
+10+20+"30"-1
+
+"10"+20+"30"-1;
+
+var a="10a"
+var b=1
+a-b
+
+"10"+20+30;
+'102030'
+"10"+20+"30"-1;
+102029
+var a="10a"
+var b=1
+undefined
+a-b
+NaN
+a+b
+'10a1'
+
+"10"+20+30;
+'102030'
+"10"+20+"30"-1;
+102029
+var a="10a"
+var b=1
+undefined
+a-b
+NaN
+a+b
+'10a1'
+parseInt(a)
+10
+parseInt(a)-b
+9
+
+var movie={
+ movieName:"kantara",
+ rating:"4.5",
+ type:"Devotion",
+ind:"sandalwood"
+}
+
+var movie=[{
+ movieName:"kantara",
+ rating:"4.5",
+ type:"Devotion",
+ind:"sandalwood"
+},
+{
+   movieName:"yajamana",
+ rating:"4.2",
+ type:"family",
+ind:"sandalwood"  
+}]
+
+Example:
+var movie=[{
+ movieName:"kantara",
+ rating:"4.5",
+ type:"Devotion",
+ind:"sandalwood"
+}]
+undefined
+movie[0].ind
+'sandalwood'
+movie;
+[{…}]0: ind: "sandalwood"movieName: "kantara"rating: "4.5"type: "Devotion"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()length: 1[[Prototype]]: Array(0)
+movie[0].movieName
+'kantara'
+var movie=[{
+ movieName:"kantara",
+ rating:"4.5",
+ type:"Devotion",
+ind:"sandalwood"
+},
+{
+   movieName:"yajamana",
+ rating:"4.2",
+ type:"family",
+ind:"sandalwood"  
+}]
+undefined
+movie;
+(2) [{…}, {…}]0: {movieName: 'kantara', rating: '4.5', type: 'Devotion', ind: 'sandalwood'}1: {movieName: 'yajamana', rating: '4.2', type: 'family', ind: 'sandalwood'}length: 2[[Prototype]]: Array(0)
+movie[1].movieName
+'yajamana'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
