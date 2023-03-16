@@ -637,10 +637,168 @@ VM2057:7 Hi chandana we don't know you
 
 
 
+renuk@Renuka MINGW64 ~/OneDrive/Desktop/WMA3TO4 (master)
+$ git clone "https://github.com/NirmaanHubliInfosys/WMA3.git"
+Cloning into 'WMA3'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 1), reused 13 (delta 1), pack-reused 0
+Receiving objects: 100% (13/13), 67.76 KiB | 3.76 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+renuk@Renuka MINGW64 ~/OneDrive/Desktop/WMA3TO4 (master)
+
+
+For Loop:
+when you want to excecute  a block of statement multiple Time,you can use looping statment to avoid writing the same statements again and again
+
+syntax:
+for(begin ; end ; stop){
+    loop code
+}
+
+ex:
+for(i=1;i<5;i++){
+    console.log(i);
+}
+
+var  i=10;
+while(i>14){
+    console.log("true");
+}
+
+let text = "";
+let i = 0;
+do {
+  text += i + "<br>";
+  i++;
+}
+while (i < 5);
+
+
+javascript operators:
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+Conditional Operators
+Type Operators
+
+what is difference between == and ===?
+
+== :comparison between two values and comparing data 
+===:comparison between two values and comparing data and data type
+
+var a=10;
+var b="10";
+
+if(a==b){
+    console.log("condition is true")
+}
+
+var a=10;
+var b=10;
+
+if(a==b){
+    console.log("condition is true")
+}
+VM93:5 condition is true
+undefined
+var a=10;
+var b="10";
+
+if(a==b){
+    console.log("condition is true")
+}else{console.log("condition is false")}
+
+VM192:5 condition is true
+undefined
+var a=10;
+var b="10";
+
+if(a===b){
+    console.log("condition is true")
+}else{console.log("condition is false")}
+VM200:6 condition is false
+undefined
+var a=renuka;
+var b="renuka";
+
+if(a==b){
+    console.log("condition is true")
+}else{console.log("condition is false")}
+
+ternary operator
+
+var a=10;
+(a==10)?true:false;
 
 
 
+if(a==10){
+    console.log("true");
+}else{
+    console.log("false")
+}
+output:true
 
+
+Array methods in js?
+
+filter method
+pop method
+map method
+find method
+concat method
+slice method
+push method
+sort method
+
+
+filter method:
+syntax:
+variablename.filter(methodname);
+
+var age=[2,6,8,9,7];
+
+function myfunction(age)
+{
+    return age>=4;
+}
+age.filter(myfunction);
+output:(4) [6, 8, 9, 7]
+
+map method:
+syntax:
+variablename.map(methodname);
+
+ex:
+var age=[6,8,9,7];
+
+function myfunction(age)
+{
+   return age-4;
+}
+age.map(myfunction);
+output:[2,4,5,3]
+
+
+concat method:
+combination of array
+syntax:
+array1.concat(array2)
+
+var firstname="jyothi"
+var lastname="xyz"
+firstname.concat(""+lastname)
+
+
+push:
+add the values in end of the array
+var frontend=["HTML","CSS","BOOTSTRAP"]
+frontend.push("Angular");
+output:(4) ['HTML', 'CSS', 'BOOTSTRAP', 'Angular']
 
 
 
