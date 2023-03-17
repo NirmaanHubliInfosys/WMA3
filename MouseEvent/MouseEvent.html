@@ -1,0 +1,32 @@
+
+<script>
+    function mouseOverEvent(){
+      alert("THIS IS JS")
+    }
+
+    function login(){
+        console.log("successfully");
+    }
+</script>
+<p onmouseover="mouseOverEvent()">Keep cursor on mouse
+</p>
+
+
+<button id="login"  onclick="login()">Login</button>
+
+
+arrow function
+arrow function were introduced in the Es6 version of JS
+
+//normal function
+ var add=function(a,b){
+    return a+b;
+ }
+add(10,20);
+
+output:30
+ arrow function
+ var add=(a,b)=>a+b;
+ add(20,40);
+
+ output:60

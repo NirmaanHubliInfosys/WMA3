@@ -754,6 +754,8 @@ concat method
 slice method
 push method
 sort method
+shift 
+unshift
 
 
 filter method:
@@ -800,5 +802,62 @@ var frontend=["HTML","CSS","BOOTSTRAP"]
 frontend.push("Angular");
 output:(4) ['HTML', 'CSS', 'BOOTSTRAP', 'Angular']
 
+unshift
+always add the beginning of the array
 
+var frontend=["HTML","CSS","BOOTSTRAP"]
+frontend.unshift("Angular");
+
+frontend
+(4) ['Angular', 'HTML', 'CSS', 'BOOTSTRAP']
+
+pop method :always remove the value end of the array
+var frontend=["HTML","CSS","BOOTSTRAP"]
+frontend.pop();
+
+
+shift():always remove the value beginning of the array
+var frontend=["HTML","CSS","BOOTSTRAP"]
+
+frontend.shift();
+output:(2) ['CSS', 'BOOTSTRAP']
+
+
+find method:
+syntax:
+Array.find();
+
+var data=[1,100,40,6,12,20,10];
+
+function checkEligibility(data){
+    return data>18;
+}
+console.log(data.find(checkEligibility));
+output:100
+
+
+sort method:
+
+syntax:
+array.sort(compareFunction);
+
+
+ex:
+var data=[1,100,40,6,12,20,10];
+data.sort();
+console.log(data);
+
+output:(7) [1, 10, 100, 12, 20, 40, 6]//it is not in sorting order
+  
+var data=[1,100,40,6,12,20,10];
+data.sort(function(a,b){return a-b})
+console.log(data);
+
+output:(7) [1, 6, 10, 12, 20, 40, 100]
+
+
+javascript EventS
+MouseEvent
+FocusEvent
+LoadEvent
 
