@@ -861,3 +861,6 @@ MouseEvent
 FocusEvent
 LoadEvent
 
+How to run json file in cmd?
+json-server --watch employe.json --port 3000
+

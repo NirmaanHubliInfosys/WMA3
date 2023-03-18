@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Students details</title>
+        <script src="form.js"></script>
+        <link href="form.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+           <div class="row">
+            <div class="col-md-offset-5">
+                <h1>Student attendence</h1>
+            </div>
+           </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">Nirmaan hubli student attendence</div>
+            <div class="panel-body">
+                <form action="http://localhost:4000/students" method="post">
+                    <div class="form-group">
+                        <label for="orderid">Orderid</label>
+                        <input class="form-control" name="id" id="orderid" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">FirstName</label>
+                        <input class="form-control" placeholder="First Name" name="fname" onblur="nameToUpper()" required id="firstname" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">LastName</label>
+                        <input class="form-control" placeholder="Last Name" name="lname" id="lastname" />
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input class="form-control" placeholder="abc@com" id="email" name="email" type="email" required/>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="password">Email</label>
+                            <input class="form-control" placeholder="password" id="password" name="password" type="password" onInput="checkPassword()" />
+                            <p id='pout'></p>
+                            <div id='ppout'></div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+       
+        </div>
+        <script>window.onload=fillId()</script>
+    </body>
+</html>
