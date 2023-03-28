@@ -97,3 +97,112 @@ break and continue;
 
 break statements
 ex:
+public class BreakExampl1 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=10;i++) {
+			System.out.println(i);
+			if(i==8) {
+				break;
+			}
+		}
+	}
+
+}
+continue;
+public class Continue {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=2;i++) {
+			for(int j=i;j<=5;j++) {
+				if(j==4) {
+					continue;
+				}
+				System.out.println(j);
+			}
+		
+			
+		}
+	}
+
+}
+
+Arrays variables
+variable is a name of memory location.
+there are three types variables in java
+1)local
+2)instance
+3)static
+
+local:a variable declared inside the body of the method is called local variable.
+
+you can use this variable only within that method and other methods in the class
+local variable cannot be defined with the "static" keyword
+
+
+
+instance:
+a variable declared inside the class but outside the body of the method,is called an instance variable it is not declared as static
+
+static:
+a variable is declared as static  is called a static variable.it cannot be local
+
+ex:
+public class A {
+
+	static int m=100;//static variable
+	
+	void method() {
+		int n=90;//local variable
+	}
+	public static void main(String[] args) {
+		int data=50;//instance variable
+	}
+}
+
+typecasting
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+
+
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
+
+
+methods in java?
+a method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation
+
+advantages:
+reusablity of code.
+we write a method once and use it many times.
+
+
+what is the constructor?
+constructor is a special type of member function/method which is used to initialize the object.
+constructor is a block of codes similar to the method.
+
+it is called when an instance of the class is created.
+
+there are two types of constructor?
+1)Default constructor(no-arguments)
+2)parameterized constructor
+
+Rules:
+1)constructor name must be the same as its class name
+2)a constructor must have no explict retur type
+3)java constructor cannot be abstract ,static ,final and synchorized
+
