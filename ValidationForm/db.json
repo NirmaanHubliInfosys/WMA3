@@ -18,6 +18,13 @@
       "fname": "Preeti",
       "lname": "xyz",
       "email": "preeti@gmail.com"
+    },
+    {
+      "id": "89497",
+      "fname": "Jyothi",
+      "lname": "xyz",
+      "email": "jyothi@gmail.com",
+      "password": "jyothi123456789"
     }
   ]
 }

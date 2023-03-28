@@ -1,0 +1,99 @@
+what is java programming?
+Syntax of Java?
+what are the features of java?
+how to installation eclipse IDE?
+
+piblic:is an access specifier that declared the main method()as unprotected this is similar to c++ public modifier
+
+void :does not return any value
+static:does not change
+
+java control statements/control flow in java?
+the stmts in the code are excecuted accroding to the order in which they appear.however,java provides stmts that can be used to control the flow of java code.such statements are called control flow statements.
+
+
+three statements?
+1)Decision making statements
+2)loop statements
+3)jump statements
+
+
+1)Decision making statements
+  a)if statements:four types if-statements
+
+  if(4>2){
+    sysout("true");
+  }
+  1)simple if statements
+  2)if-else statements 
+  3)if else-if ladder
+  4) Nested statment
+  b)switch statements
+  *cases cannot be duplicate
+  *default stmt is excecuted when any of the case does'nt match the value of expression
+
+  syntax:
+  swicth(expression){
+    case value1:
+    statments 1;
+    break;
+    .
+    .
+    .
+
+    case value N;
+    statment n;
+    break;
+    default:
+    default statment;
+  }
+
+2)loop statements
+a)do while loop
+b)while loop
+c)for loop
+d)for-each loop 
+
+for loop:
+syntax:
+for(initialization;condition;increament/decreament){
+    //block of statements;
+}
+
+EX:
+public class Calculation {
+
+	public static void main(String[] args) {
+int sum=0;
+for(int i=1;i<=3;i++) {
+	sum=sum+i;
+}
+System.out.println("the sum of first 3 natural number is "+sum);
+	}
+
+}
+
+
+FOR EACH:
+SYNTAX:
+for(data_type var:array_name/collection_name){
+    //statements
+}
+ex:
+syout("for each loop")
+
+while condition:
+while condition is checked at the start of the loop.if the condition is true,then the loop body will be excecuted;otherwise the statements after the loop will be excecuted:
+
+syntax:
+while(condition){
+  //stmts
+}
+
+
+jump statements
+break and continue;
+
+
+break statements
+ex:
