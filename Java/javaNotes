@@ -206,3 +206,78 @@ Rules:
 2)a constructor must have no explict retur type
 3)java constructor cannot be abstract ,static ,final and synchorized
 
+
+java oops concepts
+oop:object oriented programming language
+
+
+its faster and cheaper develpoment and maintance
+
+1)abstraction
+2)inheritance
+3)polymorphism
+4)encapsulation
+
+
+every object is a instance of class
+
+abstraction:its show essential feature without including background details or explanation
+
+It is used for hiding the data and giving the relevent data
+
+outer layer used in terms of design
+
+Hidding the internal implmentations details and highlight the set of service what are offering is called abstraction.
+
+ex:bank atm machine
+
+Advatages:
+without affecting outside the person.we can achieve internal implementaions
+
+
+4)encapsulation
+
+pin number
+5000( set data)
+withdraw (Get data)
+
+wrapping up of data and function into single unit is called encapsulation
+if any java class follows data hiding and abstraction such type of class is called encapsulation
+
+encapsulation=data hidding +abstaraction
+
+data hidding?
+hidding of the data outside person can't access our data directly
+
+by using private modifier we can implement data hidding
+
+ex:
+class Account{
+  private double balance=10000;
+  //setter and getter method
+}
+
+advantages:
+we can achieve security
+
+
+3)polymorphism
+
+same name with different form is the concept of polymorphism
+
+2 types:
+1)compile/static/early binding/overloading
+2)Runtime/dynamic /late binding /overriding
+
+overloading:if more than one method same name with same identity but with different signature(arguments)is called method overloading
+
+overriding :if two methods have same name with same argument.this is called as method overriding 
+
+
+overriding it is possible to use with inheritance.
+
+overriding method is called Runtime polymorphism
+
+4)inheritance
+
+Relationship between more than two class.
