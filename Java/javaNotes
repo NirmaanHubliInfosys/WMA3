@@ -3,7 +3,7 @@ Syntax of Java?
 what are the features of java?
 how to installation eclipse IDE?
 
-piblic:is an access specifier that declared the main method()as unprotected this is similar to c++ public modifier
+public:is an access specifier that declared the main method()as unprotected this is similar to c++ public modifier
 
 void :does not return any value
 static:does not change
@@ -281,3 +281,335 @@ overriding method is called Runtime polymorphism
 4)inheritance
 
 Relationship between more than two class.
+
+
+
+Exception:
+    Exception is an event that distrupts the normal flow of the program.It is an Object which is thrown at runtime.
+
+    Exception handling
+    Exception handling is a mechanism to handle runtime errors such as classNotFoundException,IO Exception,SQL Exception,
+    Remote Exception.
+
+    Advantages of Exception handling
+    This is to maintain the normal flow of the appilication
+
+    Ex:
+    If you have 10 statements in java program and an exception occurs at statement 8 the rest of the code will not be excecuted.
+    therfore statements 9 to 10 will not be excecuted.
+    However,When we perform exception handling .the rest of the statements will be  excecuted.That is why we use exception handling in java.
+
+    Type of exception
+    1)checked Exception
+    2)UnChecked Exception
+    3)errors
+
+    1)checked Exception
+    The Exception which are checked by compiler for smoth exception of pragram at runtime. it is called checked Exception
+
+    If your method through checked Exception then it should  handle Exception using try catch block or throws keyword .otherwise program will give compilation errors
+
+    EX:
+
+    SQL Exception
+    IO Exception
+    classNotFoundException
+
+
+    2)UnChecked Exception:
+    Exception which are not checked by the compiler are called unchecked Exception
+
+    ex:
+    NullPointerException
+    ArrayIndexOutBoundException
+    IllegalArgumentException
+    IllegalStateException
+
+
+    3)errors
+    Error is recoverable.
+    ex:
+    outofMemoryError,VirtualMachineError,AssertionError etc;
+
+    UserDefinedException
+    1)All Exception must be child of throwable
+    2)throw keyword always returns inside the method
+
+how many types of you can create string object?
+String literal
+By new keyword
+
+String s="welcome";
+
+
+String s1="Welcome";
+String s2="Welcome"
+
+jvm checks the "string constant pool" first.
+if the string already exists in the pool, a reference to the pooled instance is returned.
+
+If the string does not exist int the pool,a new String instance is created and placed in the pool.
+
+2)new keyword
+jvm will create a new String object in the normal(non-pool)heap memory,and the literal "welcome" will be placed in the string constant pool.
+The variable name will be refer to the object in a heap(non-pool)
+
+
+String method
+char charAt(int index);
+int length();
+string concat(String str)
+String toLowerCase();
+String toUpperCase();
+String trim();
+
+
+ex:char[] ch={'j','a','v','a'}
+String s=new String(ch);
+
+output:java
+
+
+Lifecycle of thread?
+New:In this state,Thread class object is created using a new operator,but thread is not a live.thread does not start until we call 
+the start() method.
+
+Runnable():thread is ready to run after calling start()method.
+thread is not yet selected by the thread shedular
+
+Running:Thread shedular picks the thread from the ready state, & method ,Thread is running
+
+wait():
+a thread is not running but still alive or its waiting for other thread to finish.
+
+Multithreading
+Multithreading is a process of excecuting multiple threads simultaneously,Multithreading is used to obtain the multasking.it consumes
+less memory and gives the fast and effient performance.
+
+
+Advantages of multithreading
+
+Thread is lightweight
+threads share the same address space
+the cost of communication between the process is low.
+
+
+
+collections:
+    why we need to go for collections
+    what is collection framework
+    Collection Hierachy
+    List interface & implementations
+    Set interface & implementations
+    Queue interface &implementations
+    Map interface & implementations
+
+    if you want to store 100 value like 23,24,1,2....n values 
+    you want 100 variable
+
+     variables:to store the data
+     datatype-
+     1)primitive datatypes
+     byte short int long float double char boolean
+
+     2)referenced data types(Arrays,string ,class etc);
+
+     disadvantages are;
+     Not recommended to overcome this problem Arrays concept came
+
+
+     Array:
+     we can store group of values in single variable;
+
+     int[] a=new int[5];
+     arr[0]=100;
+     arr[1]=200;
+     arr[2]=300;
+     arr[3]=400;
+     arr[4]=500;
+
+
+     Limitations of Arrays.
+    1) Array size is fixed
+     can't increase size
+     can't decrease size
+    2)We can store only homogenious values (same type of values)
+    homogenious means :int a[]=new int[5];
+                        a[0]=10;
+                        a[1]="Renuka"
+                        a[2]=10.00;
+
+
+
+                        100 student objects in a one variable
+
+                        Ex:
+                        package collections;
+
+                        public class Student1 {
+                            private String name;
+
+                            public Student1(String name) {
+                                this.name=name;
+                            }
+
+                            public static void main(String[] args) {
+                                Student1 s[]=new Student1[5];
+                                s[0]=new Student1("ravi");
+                                s[1]=new Student1("raju");
+                                
+                            s[2]=new Student1("rani");
+                            s[3]=new Employee(101,"Ramesh");
+                            
+                            }
+
+                        }
+object array :object is default class object in java
+java.lang.package
+1) Array size is fixed
+     can't increase size
+     can't decrease size
+2)We can store  homogenious  and hetrogenious values (diffent type of values)
+
+
+Limitations of object
+fixed size
+every requirement program should write logically
+
+Collections :
+To overcome Arrays concept problem so collection came
+
+collection are used to group of objects/values
+collections are growable in nature
+dynamically size can be increased and decreased based on data
+
+we can store any type of data in collection
+
+customized
+(homegenious and hetrogenious)
+
+collections providing predefined methods to insert,update,delete,retrieve,sort .
+
+Collection is an entity/container which is use to store group of object
+
+Collections is framework
+Framework means ready made software 
+collectons is called as framework bcz its providing predefined interfaces,class and method to perform on data.
+
+set
+
+ex:
+package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEx1 {
+
+	public static void main(String[] args) {
+		
+		List l=new ArrayList();
+		l.add(100);//index of 0
+		l.add(100);//index of 1
+		l.add(200);//index of 2
+		l.add(300);//index of 3
+		l.add("raju");//index of 4
+		l.add("rani");//index of 5
+		l.add(100.60);//index of 6
+		l.set(1, 23);
+//		l.add(1, 23);
+		System.out.println(l);
+
+	}
+
+}
+
+output:[100, 23, 200, 300, raju, rani, 100.6]
+
+1)Insertion order will allows
+2)duplicate values also allows
+add:
+Ex:
+package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEx1 {
+
+	public static void main(String[] args) {
+		
+		List l=new ArrayList();
+		l.add(100);//index of 0
+		l.add(1111111);//index of 1
+		l.add(200);//index of 2
+		l.add(300);//index of 3
+		l.add("raju");//index of 4
+		l.add("rani");//index of 5
+		l.add(100.60);//index of 6
+//		l.set(1, 23);
+		l.add(1, 23);
+		System.out.println(l);
+
+	}
+
+}
+output:
+[100, 23, 1111111, 200, 300, raju, rani, 100.6]
+
+
+1.List
+This category is used to store group of individual elements where the elements can be duplicated
+List is an interface whose object can not be created directly.
+To work with this category we have to use following implementaions class of list interface
+
+Ex:ArrayList,LinkedList,Vector,Stack
+
+2.set
+This category is used to store group of individual elements but they can'not be duplicated
+Set is an interface whose object can not be created directly.
+To work with this category we have to use following implementaions class of Set interface
+
+Ex:HashSet,LinkedList and TreeSet
+
+3.Queue
+This category is used to hold the elements about to be processed in FIFO(First in First Out) order
+It is an ordered list of objects with its use limited to inserting elements at the end of the list
+and deleting elements from the start of the lsit.It follows the FIFO.
+
+Ex:PriorityQueue,BlockingQueue
+
+
+4.Map
+This category is used to store the element in form key value pairs where the key can't be duplicated ,value can be duplicated
+Map is an interface whose object can not be created directly.
+To work with this category,we have to use following implementation classes of Map interface
+
+Ex:HashMap,LinkedHashMap,TreeMap,HashTable
+
+
+List interface defines the following specific method
+1)Boolean add(int index,Collection c);
+2)Object get(int index);
+3)Object remove(int index);
+4)Object Set(int index,Object o);//to replace
+5)int index(Object o);//Returns index of first occurance of o
+6)int lastIndexOf(Object o);
+7)ListIterator listiterator();
+
+
+ArrayList
+ArrayList is an implementation class of collection interface.
+The underlying data structure is resizable
+Insertion order is preserved
+Hetrogeneous Objectos are allowed
+Null insertion is possible.
+it allows duplicate values
+
+LinkedList:
+ArrayList is an implementation class of collection interface.
+The underlying data structure is double LinkedList.
+it allows duplicate values
+Insertion order is preserved
+Hetrogeneous Objectos are allowed
+Null insertion is possible.
