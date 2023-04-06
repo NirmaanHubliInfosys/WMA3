@@ -613,3 +613,98 @@ it allows duplicate values
 Insertion order is preserved
 Hetrogeneous Objectos are allowed
 Null insertion is possible.
+
+
+What is the difference between ArrayList and LinkedList
+
+Vector
+vector is the implementation class of list interface which is also used to store group of individual objects where duplicate values are allowed
+
+vector is also called legacy class bcz it is available  from java 1.0 version
+
+vector is exactly similar to ArrayList but ArrrayList is not a synchronized class  where vector is a synchronized class
+
+vector class constructors
+1)Vector<E> v=new Vector<E>();
+2)Vector <E>v =new Vector <E>(int capacity);
+3)Vector<E>v=new Vector<E>(Collection obj);
+
+
+Stack :
+Stack  is a child class of vector and implements List interface
+Stack stores a group of objects using a mechanism called LIFO 
+LIFO MEANS last inserted element deleted first.
+
+example of LIFO is bangles
+
+methods
+we can use all collection methods
+we can also use legacy methods of vector class like addElement(),removeElement(),setElementAt() etc. 
+
+if you want to follow LIFO ,WE SHOLUD USE STACK METHODS LIKE 
+1)E PUSH(E Obj)
+2)E POP()
+3)E PEEK():THIS METHOD JUST RETURN THE TOP ELEMENT AVAILABLE ON STACK
+
+cursors of collection framework 
+cursors are mainly used to access the elements of any collection.
+we have following 3 types of cursors in collection framework
+1.Iterator;
+2.ListIterator
+3.Enumeration
+
+
+1.Iterator:
+this cursor is used to access the elements in forward direction only
+this cursor can be applied any collection(list,set)
+while accessing the methods we can also delete the elements
+Iterator is interface and we cannot create an object directly
+if we want to create an object for iterator,we have to use iterator()method
+
+
+creation of iterator:
+Iterator it=c.iterator();
+
+methods:
+1.boolean hasNext()
+2.Oject next();
+3.void remove()
+
+
+2.ListIterator
+this cursor is used to access the elements in both backward direction and forward direction only
+this cursor can be applied for only list category collection
+while accessing the methods we can also add,set delete the elements
+ListIterator is interface and we cannot create an object directly
+if we want to create an object for ListIterator,we have to use ListIterator()method
+
+creation of ListIterator:
+ListIterator it=c.listiterator();
+
+methods:
+1.boolean hasNext()
+2.Object next();
+3.Object previous()
+4.boolean hasPrevious()
+5.int nextIndex();
+6.int previousIndex();
+7.void remove();
+8.void set(Object obj);
+9.void add(Object obj)
+
+3.Enumeration
+this cursor is used to access the elements of collections only in forward direction
+this legacy cursor can be applied for only legacy classes like vector ,stack,hashtable
+Enumeration is interface and we cannot create an object directly
+if we want to create an object for Enumeration,we have to use legacy method called elements() method
+
+
+
+creation of Enumeration:
+Enumeration it=c.elements();
+
+methods:
+1.boolean hasNext()
+2.Object next();
+
+
