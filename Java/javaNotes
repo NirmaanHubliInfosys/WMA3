@@ -6,7 +6,7 @@ how to installation eclipse IDE?
 public:is an access specifier that declared the main method()as unprotected this is similar to c++ public modifier
 
 void :does not return any value
-static:does not change
+static:does not changes
 
 java control statements/control flow in java?
 the stmts in the code are excecuted accroding to the order in which they appear.however,java provides stmts that can be used to control the flow of java code.such statements are called control flow statements.
